@@ -255,3 +255,18 @@ border: 1px solid rgb(255, 252, 0);
 .indays{
   width: 50%;
 }
+
+@media screen and (max-width: 700px) {
+
+    body{
+      width: 100vw;
+      font-size: 150%;
+    }
+    .header{
+      width: 100vw;
+      flex-wrap: wrap;
+    }
+    .project{
+      width: 100vw;
+    }
+  }
