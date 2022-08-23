@@ -4,24 +4,24 @@
 
 body{
   margin: 0;
-  width: 100vw;
+  width: 900px;
   height: 100vh;
-  /* background: rgb(222, 146, 254); */
-  font-family: sans-serif;
+  font-family: monospace;
   font-size: 14px;
 }
 
 img{
   max-width: 100%;
+  width: 5rem;
 }
 
 a:link {
-  color: rgb(5, 53, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(5, 53, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-style: italic;
 }
@@ -36,6 +36,17 @@ a:active {
   color: rgb(240, 237, 7);
   background-color: transparent;
   font-style: italic;
+}
+
+h2{
+  font-kerning: none;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+h3{
+  font-size: 11px;
+  font-weight: normal;
 }
 
 .h1{
@@ -59,14 +70,89 @@ a:active {
   grid-gap: 5rem;
   font-size: 13px;
   position: fixed;
-  color: rgb(5, 53, 255);
-  width: 100vw;
-  height: 3rem;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  width: 60%;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 50%;
+
+}
+
+#R{
+    cursor: progress;
+}
+
+.resources{
+  z-index: 999;
+  width: 20%;
+  height: 50%;
+  background: rgb(255, 252, 0);
+  color: rgb(5, 53, 255);
+  position: fixed;
+  top: 0.5%;
+  right: 0.5%;
+  cursor: move;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+
+.resources-block-barr{
+width: 100%;
+font-size: 1rem;
+height: 50px;
+}
+
+.resources-block-intro{
+background: rgb(16, 88, 249);
+color: rgb(255, 252, 0);
+width: 100%;
+font-size: 11px;
+}
+
+.resources-block2{
+background: rgb(255, 255, 255);
+color: rgb(5, 53, 255);
+width: 100%;
+border: 1px solid rgb(255, 252, 0);
+}
+
+.close {
+  display: block;
+  background: white;
+  position: absolute;
+  top:0;
+  right: 0;
+    height: 20px; /* this can be anything */
+    width: 20px;  /* ...but maintain 1:1 aspect ratio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close::before,
+.close::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px; /* cross thickness */
+    background-color: rgb(5, 53, 255);
+}
+
+.close::before {
+    transform: rotate(45deg);
+}
+
+.close::after {
+    transform: rotate(-45deg);
 }
 
 
 .project{
+
   display: flex;
   flex-direction:row;
   flex-wrap: nowrap;
@@ -74,23 +160,24 @@ a:active {
   grid-gap: 0.5rem;
   justify-content: space-between;
   /* background: rgb(0, 255, 87); */
-  width: 95%;
+  width: 80%;
   /* height: 20rem; */
   position: absolute;
   top: 25%;
-  left: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .project-text{
-  background: rgb(3, 85, 228);
-  color: rgb(242, 255, 0);
-  width: 5%;
-  border-radius: 50%;
+  border: solid 1.2px rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  width: 10%;
+  border-radius: 40%;
   margin-left: 0.5rem;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   text-align: center;
-  padding-right: 1.5%;
+  padding-right: 4%;
 }
 
 .week{
@@ -99,16 +186,16 @@ a:active {
   align-items: stretch;
   grid-gap: 0 0.5rem;
   /* background: rgb(4, 172, 46); */
-  width: 95%;
-  margin: 0.5rem 0.5rem 0.5rem 0;
+  width: 90%;
+  margin: 0 0.5rem 0.5rem 0;
 }
 
 .week-text{
   color: rgb(75, 255, 121);
   background: rgb(255, 0, 168);
   width: 98%;
-  margin: 0.5rem 0.5rem 0 0.5rem;
-  border-radius: 50%;
+  margin: 0 0.5rem 0 0.5rem;
+  border-radius: 35%;
   text-align: center;
 }
 
