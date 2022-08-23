@@ -3,10 +3,19 @@ $( function() {
   } );
 
   $(".resources").hide();
-  $("#R").click(function(){
+  $("#R").hover(function(){
     $(".resources").show();
   });
 
   $("#X").click(function(){
     $(".resources").hide();
+  });
+
+  $(".wks-info").hide();
+  $(".wks").hover(function(){
+    $(".wks-info").show();
+  });
+
+  $(".wks").mouseout(function(){
+    $(".wks-info").hide();
   });
