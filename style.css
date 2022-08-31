@@ -247,7 +247,12 @@ width: 100%;
 .M{
   padding: 0.5rem;
   width: 50%;
+}
 
+.M-no{
+  padding: 0.5rem;
+  width: 50%;
+  border:solid 2px #F3EFE4;
 }
 
 
