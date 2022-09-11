@@ -24,8 +24,17 @@ $( function() {
     $(".wks-info").show();
   });
 
+  $(".p-info").hide();
+  $(".p").hover(function(){
+    $(".p-info").show();
+  });
+
   $(".wks").mouseout(function(){
     $(".wks-info").hide();
+  });
+
+  $(".p").mouseout(function(){
+    $(".p-info").hide();
   });
 
   $(".project1-brief").hide();
